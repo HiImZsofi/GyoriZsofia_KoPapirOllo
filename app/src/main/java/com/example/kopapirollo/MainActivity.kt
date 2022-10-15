@@ -3,17 +3,21 @@ package com.example.kopapirollo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import java.util.jar.Pack200
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var rlayout : RelativeLayout
-    private lateinit var mainlinear : LinearLayout
-    private lateinit var playerImg : ImageView
+    private lateinit var mainlayout : LinearLayout //ok
+    private lateinit var mainlinear : LinearLayout //ok
+    private lateinit var cheart1 : ImageView
+    private lateinit var cheart2 : ImageView
+    private lateinit var cheart3 : ImageView
+    private lateinit var pheart1 : ImageView
+    private lateinit var pheart2 : ImageView
+    private lateinit var pheart3 : ImageView
+    private lateinit var draw : TextView
     private lateinit var playerPick : TextView
-    private lateinit var compImg : ImageView
     private lateinit var compPick: TextView
-    private lateinit var result : TextView
-    private lateinit var secondLinear : LinearLayout
     private lateinit var btnRock : Button
     private lateinit var btnPaper : Button
     private lateinit var btnScissors : Button
@@ -29,14 +33,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun init(){
-        rlayout = findViewById(R.id.rlayout)
+        mainlayout = findViewById(R.id.mainlayout)
         mainlinear = findViewById(R.id.mainlinear)
-        playerImg = findViewById(R.id.playerImg)
+        cheart1 = findViewById(R.id.cheart1)
+        cheart2 = findViewById(R.id.cheart2)
+        cheart3 = findViewById(R.id.cheart3)
+        pheart1 = findViewById(R.id.pheart1)
+        pheart2 = findViewById(R.id.pheart2)
+        pheart3 = findViewById(R.id.pheart3)
+        draw = findViewById(R.id.draw)
         playerPick = findViewById(R.id.playerPick)
-        compImg = findViewById(R.id.compImg)
         compPick = findViewById(R.id.compPick)
-        result = findViewById(R.id.result)
-        secondLinear = findViewById(R.id.secondlinear)
         btnRock = findViewById(R.id.btnRock)
         btnPaper = findViewById(R.id.btnPaper)
         btnScissors = findViewById(R.id.btnScissors)
